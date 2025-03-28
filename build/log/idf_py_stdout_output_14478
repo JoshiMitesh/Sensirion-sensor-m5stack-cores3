@@ -1,0 +1,277 @@
+Command: /home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/mitesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/mitesh/m5core-s3-hello-world/build/m5core-s3-hello-world.elf /home/mitesh/m5core-s3-hello-world/build/bootloader/bootloader.elf -m '/home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/mitesh/esp/esp-idf/tools/idf.py'
+[0;32mI (104) esp_image: segment 2: paddr=0002592c vaddr=40374000 sizeconfESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2025 03:19:31[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12c60h ( 76896) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00022c88 vaddr=3fc95800 size=02c9ch ( 11420) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0002592c vaddr=40374000 size=0a6ech ( 42732) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=39564h (234852) map[0m
+[0;32mI (157) esp_image: segment 4: paddr=0006958c vaddr=4037e6ec size=07098h ( 28824) load[0m
+[0;32mI (163) esp_image: segment 5: paddr=0007062c vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (171) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (182) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu start user code[0m
+[0;32mI (191) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (191) app_init: Application information:[0m
+[0;32mI (191) app_init: Project name:     m5core-s3-hello-world[0m
+[0;32mI (196) app_init: App version:      1[0m
+[0;32mI (200) app_init: Compile time:     Mar 26 2025 03:19:17[0m
+[0;32mI (205) app_init: ELF file SHA256:  c8aa210b5...[0m
+[0;32mI (209) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC99898 len 0004FE78 (319 KiB): RAM[0m
+[0;32mI (238) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (273) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (282) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (288) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (315) M5GFX: [Autodetect] board_M5StackCoreS3SE[0m
+[0;33mW (455) Power: setExtPower(true) is canceled.[0m
+[0;32mI (835) SEN54: Initializing I2C[0m
+[0;32mI (835) SEN54: Sensor found at address 0x69[0m
+[0;32mI (835) SEN54: Initializing SEN54[0m
+[0;32mI (835) SEN54: Resetting sensor[0m
+[0;32mI (1835) SEN54: Starting fan cleaning[0m
+[0;32mI (11835) SEN54: Starting measurements[0m
+[0;32mI (13925) SEN54: Readings: PM1=0.0 PM2.5=0.0 PM4=0.0 PM10=0.0 TVOC=0.0 Temp=36.5°C Hum=24.9%[0m
+[0;32mI (16015) SEN54: Readings: PM1=4.0 PM2.5=8.0 PM4=11.2 PM10=12.7 TVOC=0.0 Temp=36.5°C Hum=24.8%[0m
+[0;32mI (18105) SEN54: Readings: PM1=4.1 PM2.5=6.7 PM4=8.7 PM10=9.7 TVOC=0.0 Temp=36.5°C Hum=24.8%[0m
+[0;32mI (20195) SEN54: Readings: PM1=4.0 PM2.5=6.5 PM4=8.3 PM10=9.2 TVOC=0.0 Temp=36.5°C Hum=24.7%[0m
+[0;32mI (22285) SEN54: Readings: PM1=3.9 PM2.5=7.3 PM4=9.9 PM10=11.2 TVOC=0.0 Temp=36.5°C Hum=24.6%[0m
+[0;32mI (24375) SEN54: Readings: PM1=3.9 PM2.5=7.1 PM4=9.6 PM10=10.8 TVOC=0.0 Temp=36.5°C Hum=24.6%[0m
+[0;32mI (26465) SEN54: Readings: PM1=3.8 PM2.5=7.0 PM4=9.4 PM10=10.6 TVOC=0.0 Temp=36.5°C Hum=24.5%[0m
+[0;32mI (28555) SEN54: Readings: PM1=3.7 PM2.5=6.8 PM4=9.2 PM10=10.3 TVOC=0.0 Temp=36.4°C Hum=24.5%[0m
+[0;32mI (30645) SEN54: Readings: PM1=3.6 PM2.5=6.2 PM4=8.2 PM10=9.2 TVOC=0.0 Temp=36.4°C Hum=24.5%[0m
+[0;32mI (32735) SEN54: Readings: PM1=5.6 PM2.5=8.9 PM4=11.4 PM10=12.5 TVOC=0.0 Temp=36.4°C Hum=24.5%[0m
+[0;32mI (34825) SEN54: Readings: PM1=8.6 PM2.5=13.0 PM4=16.2 PM10=17.7 TVOC=0.0 Temp=36.4°C Hum=27.2%[0m
+[0;32mI (36915) SEN54: Readings: PM1=8.0 PM2.5=11.7 PM4=14.4 PM10=15.6 TVOC=0.0 Temp=36.4°C Hum=30.3%[0m
+[0;32mI (39005) SEN54: Readings: PM1=6.7 PM2.5=9.5 PM4=11.4 PM10=12.3 TVOC=0.0 Temp=36.4°C Hum=32.2%[0m
+[0;32mI (41095) SEN54: Readings: PM1=6.2 PM2.5=8.8 PM4=10.6 PM10=11.5 TVOC=0.0 Temp=36.3°C Hum=32.1%[0m
+[0;32mI (43185) SEN54: Readings: PM1=5.9 PM2.5=8.4 PM4=10.1 PM10=10.9 TVOC=0.0 Temp=36.3°C Hum=32.2%[0m
+[0;32mI (45275) SEN54: Readings: PM1=5.6 PM2.5=7.9 PM4=9.5 PM10=10.3 TVOC=0.0 Temp=36.2°C Hum=32.1%[0m
+[0;32mI (47365) SEN54: Readings: PM1=5.3 PM2.5=7.4 PM4=8.8 PM10=9.5 TVOC=0.0 Temp=36.2°C Hum=31.8%[0m
+[0;32mI (49455) SEN54: Readings: PM1=5.0 PM2.5=7.1 PM4=8.6 PM10=9.3 TVOC=0.0 Temp=36.1°C Hum=31.4%[0m
+[0;32mI (51545) SEN54: Readings: PM1=4.8 PM2.5=6.8 PM4=8.2 PM10=8.9 TVOC=0.0 Temp=36.0°C Hum=31.1%[0m
+[0;32mI (53635) SEN54: Readings: PM1=4.7 PM2.5=6.5 PM4=7.8 PM10=8.4 TVOC=0.0 Temp=35.9°C Hum=30.8%[0m
+[0;32mI (55725) SEN54: Readings: PM1=4.5 PM2.5=6.2 PM4=7.5 PM10=8.1 TVOC=0.0 Temp=35.8°C Hum=30.4%[0m
+[0;32mI (57805) SEN54: Readings: PM1=4.4 PM2.5=6.0 PM4=7.1 PM10=7.7 TVOC=0.0 Temp=35.7°C Hum=30.1%[0m
+[0;32mI (59905) SEN54: Readings: PM1=4.2 PM2.5=5.8 PM4=6.9 PM10=7.4 TVOC=1.0 Temp=35.5°C Hum=29.9%[0m
+[0;32mI (61995) SEN54: Readings: PM1=4.0 PM2.5=5.5 PM4=6.5 PM10=7.0 TVOC=3.0 Temp=35.3°C Hum=29.8%[0m
+[0;32mI (64085) SEN54: Readings: PM1=4.0 PM2.5=5.4 PM4=6.4 PM10=6.9 TVOC=7.0 Temp=35.1°C Hum=29.7%[0m
+[0;32mI (66175) SEN54: Readings: PM1=3.9 PM2.5=5.3 PM4=6.3 PM10=6.8 TVOC=13.0 Temp=34.9°C Hum=29.7%[0m
+[0;32mI (68265) SEN54: Readings: PM1=3.9 PM2.5=5.3 PM4=6.2 PM10=6.7 TVOC=19.0 Temp=34.7°C Hum=29.8%[0m
+[0;32mI (70355) SEN54: Readings: PM1=3.8 PM2.5=5.2 PM4=6.2 PM10=6.6 TVOC=24.0 Temp=34.6°C Hum=29.9%[0m
+[0;32mI (72445) SEN54: Readings: PM1=3.8 PM2.5=5.1 PM4=6.1 PM10=6.5 TVOC=29.0 Temp=34.4°C Hum=30.1%[0m
+[0;32mI (74535) SEN54: Readings: PM1=3.7 PM2.5=5.0 PM4=5.9 PM10=6.4 TVOC=34.0 Temp=34.2°C Hum=30.2%[0m
+[0;32mI (76625) SEN54: Readings: PM1=3.6 PM2.5=4.9 PM4=5.8 PM10=6.2 TVOC=38.0 Temp=34.1°C Hum=30.3%[0m
+[0;32mI (78715) SEN54: Readings: PM1=3.5 PM2.5=4.7 PM4=5.5 PM10=5.9 TVOC=42.0 Temp=33.9°C Hum=30.4%[0m
+[0;32mI (80805) SEN54: Readings: PM1=3.4 PM2.5=4.6 PM4=5.3 PM10=5.7 TVOC=46.0 Temp=33.8°C Hum=30.4%[0m
+[0;32mI (82895) SEN54: Readings: PM1=3.4 PM2.5=4.5 PM4=5.2 PM10=5.6 TVOC=49.0 Temp=33.7°C Hum=30.5%[0m
+[0;32mI (84985) SEN54: Readings: PM1=3.3 PM2.5=4.3 PM4=5.1 PM10=5.4 TVOC=51.0 Temp=33.6°C Hum=30.5%[0m
+[0;32mI (87075) SEN54: Readings: PM1=3.1 PM2.5=4.1 PM4=4.8 PM10=5.1 TVOC=54.0 Temp=33.4°C Hum=30.6%[0m
+[0;32mI (89165) SEN54: Readings: PM1=3.0 PM2.5=4.0 PM4=4.6 PM10=4.9 TVOC=56.0 Temp=33.4°C Hum=30.7%[0m
+[0;32mI (91255) SEN54: Readings: PM1=2.9 PM2.5=3.8 PM4=4.5 PM10=4.8 TVOC=58.0 Temp=33.3°C Hum=30.7%[0m
+[0;32mI (93345) SEN54: Readings: PM1=2.8 PM2.5=3.7 PM4=4.4 PM10=4.6 TVOC=60.0 Temp=33.2°C Hum=30.6%[0m
+[0;32mI (95435) SEN54: Readings: PM1=2.7 PM2.5=3.6 PM4=4.2 PM10=4.5 TVOC=61.0 Temp=33.2°C Hum=30.6%[0m
+[0;32mI (97525) SEN54: Readings: PM1=2.6 PM2.5=3.4 PM4=4.0 PM10=4.2 TVOC=62.0 Temp=33.1°C Hum=30.5%[0m
+[0;32mI (99615) SEN54: Readings: PM1=2.6 PM2.5=3.3 PM4=3.8 PM10=4.1 TVOC=63.0 Temp=33.1°C Hum=30.4%[0m
+[0;32mI (101705) SEN54: Readings: PM1=2.6 PM2.5=3.3 PM4=3.8 PM10=4.0 TVOC=63.0 Temp=33.0°C Hum=30.4%[0m
+[0;32mI (103795) SEN54: Readings: PM1=2.5 PM2.5=3.3 PM4=3.8 PM10=4.0 TVOC=64.0 Temp=33.0°C Hum=30.3%[0m
+[0;32mI (105885) SEN54: Readings: PM1=2.6 PM2.5=3.3 PM4=3.8 PM10=4.0 TVOC=65.0 Temp=32.9°C Hum=30.3%[0m
+[0;32mI (107975) SEN54: Readings: PM1=2.7 PM2.5=3.4 PM4=3.9 PM10=4.2 TVOC=66.0 Temp=32.9°C Hum=30.3%[0m
+[0;32mI (110065) SEN54: Readings: PM1=2.8 PM2.5=3.6 PM4=4.2 PM10=4.4 TVOC=67.0 Temp=32.9°C Hum=30.4%[0m
+[0;32mI (112155) SEN54: Readings: PM1=2.9 PM2.5=3.7 PM4=4.3 PM10=4.5 TVOC=68.0 Temp=32.8°C Hum=30.4%[0m
+[0;32mI (114245) SEN54: Readings: PM1=3.0 PM2.5=3.8 PM4=4.4 PM10=4.6 TVOC=69.0 Temp=32.8°C Hum=30.5%[0m
+[0;32mI (116335) SEN54: Readings: PM1=3.1 PM2.5=3.9 PM4=4.5 PM10=4.7 TVOC=70.0 Temp=32.8°C Hum=30.5%[0m
+[0;32mI (118425) SEN54: Readings: PM1=3.1 PM2.5=3.9 PM4=4.5 PM10=4.8 TVOC=72.0 Temp=32.8°C Hum=30.5%[0m
+[0;32mI (120515) SEN54: Readings: PM1=3.1 PM2.5=3.9 PM4=4.5 PM10=4.7 TVOC=73.0 Temp=32.7°C Hum=30.5%[0m
+[0;32mI (122605) SEN54: Readings: PM1=3.1 PM2.5=3.9 PM4=4.5 PM10=4.7 TVOC=74.0 Temp=32.7°C Hum=30.5%[0m
+[0;32mI (124695) SEN54: Readings: PM1=3.0 PM2.5=3.8 PM4=4.3 PM10=4.6 TVOC=75.0 Temp=32.7°C Hum=30.5%[0m
+[0;32mI (126785) SEN54: Readings: PM1=3.0 PM2.5=3.8 PM4=4.3 PM10=4.6 TVOC=76.0 Temp=32.7°C Hum=30.5%[0m
+[0;32mI (128875) SEN54: Readings: PM1=3.0 PM2.5=3.8 PM4=4.3 PM10=4.5 TVOC=77.0 Temp=32.7°C Hum=30.6%[0m
+[0;32mI (130965) SEN54: Readings: PM1=2.9 PM2.5=3.7 PM4=4.3 PM10=4.5 TVOC=78.0 Temp=32.6°C Hum=30.7%[0m
+[0;32mI (133055) SEN54: Readings: PM1=2.9 PM2.5=3.7 PM4=4.2 PM10=4.4 TVOC=80.0 Temp=32.6°C Hum=30.8%[0m
+[0;32mI (135145) SEN54: Readings: PM1=2.9 PM2.5=3.6 PM4=4.1 PM10=4.4 TVOC=81.0 Temp=32.6°C Hum=31.0%[0m
+[0;32mI (137235) SEN54: Readings: PM1=2.8 PM2.5=3.5 PM4=4.0 PM10=4.2 TVOC=82.0 Temp=32.6°C Hum=31.1%[0m
+[0;32mI (139325) SEN54: Readings: PM1=2.8 PM2.5=3.5 PM4=4.0 PM10=4.2 TVOC=83.0 Temp=32.6°C Hum=31.4%[0m
+[0;32mI (141415) SEN54: Readings: PM1=3.6 PM2.5=4.6 PM4=5.2 PM10=5.5 TVOC=91.0 Temp=32.6°C Hum=32.0%[0m
+[0;32mI (143505) SEN54: Readings: PM1=4.7 PM2.5=5.9 PM4=6.7 PM10=7.1 TVOC=123.0 Temp=32.6°C Hum=38.5%[0m
+[0;32mI (145595) SEN54: Readings: PM1=4.8 PM2.5=6.0 PM4=6.8 PM10=7.2 TVOC=155.0 Temp=32.6°C Hum=44.8%[0m
+[0;32mI (147685) SEN54: Readings: PM1=4.8 PM2.5=6.0 PM4=6.8 PM10=7.2 TVOC=184.0 Temp=32.6°C Hum=48.0%[0m
+[0;32mI (149775) SEN54: Readings: PM1=4.7 PM2.5=5.9 PM4=6.6 PM10=7.0 TVOC=209.0 Temp=32.6°C Hum=49.0%[0m
+[0;32mI (151865) SEN54: Readings: PM1=4.6 PM2.5=5.7 PM4=6.4 PM10=6.8 TVOC=227.0 Temp=32.6°C Hum=48.5%[0m
+[0;32mI (153955) SEN54: Readings: PM1=4.4 PM2.5=5.5 PM4=6.2 PM10=6.5 TVOC=235.0 Temp=32.7°C Hum=47.9%[0m
+[0;32mI (156045) SEN54: Readings: PM1=4.2 PM2.5=5.3 PM4=5.9 PM10=6.2 TVOC=236.0 Temp=32.7°C Hum=47.4%[0m
+[0;32mI (158135) SEN54: Readings: PM1=4.1 PM2.5=5.1 PM4=5.7 PM10=6.0 TVOC=229.0 Temp=32.7°C Hum=47.0%[0m
+[0;32mI (160225) SEN54: Readings: PM1=4.1 PM2.5=5.0 PM4=5.6 PM10=5.9 TVOC=221.0 Temp=32.7°C Hum=46.6%[0m
+[0;32mI (162315) SEN54: Readings: PM1=4.0 PM2.5=4.9 PM4=5.5 PM10=5.8 TVOC=212.0 Temp=32.8°C Hum=46.0%[0m
+[0;32mI (164405) SEN54: Readings: PM1=3.9 PM2.5=4.8 PM4=5.3 PM10=5.6 TVOC=202.0 Temp=32.8°C Hum=45.2%[0m
+[0;32mI (166495) SEN54: Readings: PM1=3.8 PM2.5=4.7 PM4=5.2 PM10=5.5 TVOC=191.0 Temp=32.8°C Hum=44.1%[0m
+[0;32mI (168585) SEN54: Readings: PM1=3.8 PM2.5=4.6 PM4=5.1 PM10=5.4 TVOC=180.0 Temp=32.8°C Hum=43.2%[0m
+[0;32mI (170675) SEN54: Readings: PM1=3.7 PM2.5=4.6 PM4=5.1 PM10=5.3 TVOC=169.0 Temp=32.8°C Hum=42.3%[0m
+[0;32mI (172765) SEN54: Readings: PM1=3.7 PM2.5=4.5 PM4=5.0 PM10=5.3 TVOC=159.0 Temp=32.8°C Hum=41.4%[0m
+[0;32mI (174855) SEN54: Readings: PM1=3.6 PM2.5=4.4 PM4=4.9 PM10=5.1 TVOC=150.0 Temp=32.8°C Hum=40.5%[0m
+[0;32mI (176945) SEN54: Readings: PM1=3.5 PM2.5=4.3 PM4=4.8 PM10=5.0 TVOC=141.0 Temp=32.8°C Hum=39.6%[0m
+[0;32mI (179035) SEN54: Readings: PM1=3.4 PM2.5=4.1 PM4=4.6 PM10=4.8 TVOC=132.0 Temp=32.8°C Hum=38.8%[0m
+[0;32mI (181125) SEN54: Readings: PM1=3.2 PM2.5=3.9 PM4=4.3 PM10=4.5 TVOC=120.0 Temp=32.8°C Hum=38.0%[0m
+[0;32mI (183215) SEN54: Readings: PM1=3.1 PM2.5=3.7 PM4=4.1 PM10=4.3 TVOC=114.0 Temp=32.8°C Hum=37.6%[0m
+[0;32mI (185305) SEN54: Readings: PM1=3.0 PM2.5=3.6 PM4=4.0 PM10=4.2 TVOC=108.0 Temp=32.8°C Hum=37.2%[0m
+[0;32mI (187395) SEN54: Readings: PM1=3.0 PM2.5=3.6 PM4=4.0 PM10=4.2 TVOC=102.0 Temp=32.8°C Hum=36.7%[0m
+[0;32mI (189485) SEN54: Readings: PM1=2.9 PM2.5=3.6 PM4=3.9 PM10=4.1 TVOC=98.0 Temp=32.8°C Hum=36.3%[0m
+[0;32mI (191575) SEN54: Readings: PM1=3.0 PM2.5=3.6 PM4=4.0 PM10=4.1 TVOC=93.0 Temp=32.8°C Hum=35.9%[0m
+[0;32mI (193665) SEN54: Readings: PM1=3.0 PM2.5=3.6 PM4=4.0 PM10=4.2 TVOC=90.0 Temp=32.8°C Hum=35.5%[0m
+[0;32mI (195755) SEN54: Readings: PM1=3.1 PM2.5=3.7 PM4=4.1 PM10=4.3 TVOC=86.0 Temp=32.8°C Hum=35.3%[0m
+[0;32mI (197845) SEN54: Readings: PM1=3.1 PM2.5=3.8 PM4=4.2 PM10=4.3 TVOC=83.0 Temp=32.8°C Hum=35.0%[0m
+[0;32mI (199935) SEN54: Readings: PM1=3.1 PM2.5=3.8 PM4=4.1 PM10=4.3 TVOC=81.0 Temp=32.8°C Hum=34.7%[0m
+[0;32mI (202025) SEN54: Readings: PM1=3.1 PM2.5=3.7 PM4=4.1 PM10=4.2 TVOC=79.0 Temp=32.8°C Hum=34.4%[0m
+[0;32mI (204115) SEN54: Readings: PM1=3.0 PM2.5=3.6 PM4=4.0 PM10=4.1 TVOC=76.0 Temp=32.8°C Hum=34.0%[0m
+[0;32mI (206205) SEN54: Readings: PM1=3.0 PM2.5=3.6 PM4=4.0 PM10=4.1 TVOC=75.0 Temp=32.8°C Hum=33.9%[0m
+[0;32mI (208295) SEN54: Readings: PM1=3.0 PM2.5=3.5 PM4=3.9 PM10=4.0 TVOC=74.0 Temp=32.8°C Hum=33.8%[0m
+[0;32mI (210385) SEN54: Readings: PM1=2.9 PM2.5=3.5 PM4=3.8 PM10=4.0 TVOC=73.0 Temp=32.8°C Hum=33.7%[0m
+[0;32mI (212475) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.8 PM10=3.9 TVOC=73.0 Temp=32.8°C Hum=33.7%[0m
+[0;32mI (214565) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.8 PM10=3.9 TVOC=72.0 Temp=32.8°C Hum=33.7%[0m
+[0;32mI (216655) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.7 PM10=3.9 TVOC=72.0 Temp=32.8°C Hum=33.6%[0m
+[0;32mI (218745) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.7 PM10=3.9 TVOC=73.0 Temp=32.8°C Hum=33.5%[0m
+[0;32mI (220835) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.7 PM10=3.9 TVOC=73.0 Temp=32.8°C Hum=33.4%[0m
+[0;32mI (222925) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.7 PM10=3.8 TVOC=73.0 Temp=32.7°C Hum=33.3%[0m
+[0;32mI (225015) SEN54: Readings: PM1=2.8 PM2.5=3.3 PM4=3.7 PM10=3.8 TVOC=74.0 Temp=32.7°C Hum=33.2%[0m
+[0;32mI (227105) SEN54: Readings: PM1=2.8 PM2.5=3.3 PM4=3.6 PM10=3.8 TVOC=74.0 Temp=32.7°C Hum=33.1%[0m
+[0;32mI (229195) SEN54: Readings: PM1=2.8 PM2.5=3.3 PM4=3.6 PM10=3.7 TVOC=75.0 Temp=32.7°C Hum=33.0%[0m
+[0;32mI (231285) SEN54: Readings: PM1=2.7 PM2.5=3.2 PM4=3.5 PM10=3.6 TVOC=75.0 Temp=32.7°C Hum=32.9%[0m
+[0;32mI (233375) SEN54: Readings: PM1=2.7 PM2.5=3.1 PM4=3.4 PM10=3.5 TVOC=76.0 Temp=32.7°C Hum=32.8%[0m
+[0;32mI (235465) SEN54: Readings: PM1=2.7 PM2.5=3.1 PM4=3.4 PM10=3.5 TVOC=76.0 Temp=32.7°C Hum=32.8%[0m
+[0;32mI (237555) SEN54: Readings: PM1=2.7 PM2.5=3.2 PM4=3.4 PM10=3.5 TVOC=77.0 Temp=32.7°C Hum=32.7%[0m
+[0;32mI (239645) SEN54: Readings: PM1=2.7 PM2.5=3.2 PM4=3.5 PM10=3.6 TVOC=78.0 Temp=32.7°C Hum=32.7%[0m
+[0;32mI (241735) SEN54: Readings: PM1=2.8 PM2.5=3.2 PM4=3.5 PM10=3.6 TVOC=79.0 Temp=32.7°C Hum=32.6%[0m
+[0;32mI (243825) SEN54: Readings: PM1=2.8 PM2.5=3.3 PM4=3.6 PM10=3.7 TVOC=79.0 Temp=32.7°C Hum=32.5%[0m
+[0;32mI (245915) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.7 PM10=3.8 TVOC=80.0 Temp=32.7°C Hum=32.4%[0m
+[0;32mI (248005) SEN54: Readings: PM1=3.1 PM2.5=3.6 PM4=3.9 PM10=4.0 TVOC=80.0 Temp=32.7°C Hum=32.4%[0m
+[0;32mI (250095) SEN54: Readings: PM1=3.1 PM2.5=3.6 PM4=3.9 PM10=4.0 TVOC=81.0 Temp=32.7°C Hum=32.3%[0m
+[0;32mI (252185) SEN54: Readings: PM1=3.2 PM2.5=3.7 PM4=4.0 PM10=4.1 TVOC=82.0 Temp=32.7°C Hum=32.3%[0m
+[0;32mI (254275) SEN54: Readings: PM1=3.2 PM2.5=3.7 PM4=4.0 PM10=4.1 TVOC=83.0 Temp=32.7°C Hum=32.2%[0m
+[0;32mI (256365) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=83.0 Temp=32.7°C Hum=32.2%[0m
+[0;32mI (258455) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=84.0 Temp=32.7°C Hum=32.2%[0m
+[0;32mI (260545) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.3 TVOC=85.0 Temp=32.7°C Hum=32.1%[0m
+[0;32mI (262635) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=85.0 Temp=32.7°C Hum=32.0%[0m
+[0;32mI (264725) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=86.0 Temp=32.7°C Hum=31.9%[0m
+[0;32mI (266815) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=86.0 Temp=32.7°C Hum=31.9%[0m
+[0;32mI (268905) SEN54: Readings: PM1=3.2 PM2.5=3.7 PM4=4.0 PM10=4.1 TVOC=87.0 Temp=32.7°C Hum=31.9%[0m
+[0;32mI (270995) SEN54: Readings: PM1=3.2 PM2.5=3.6 PM4=3.9 PM10=4.0 TVOC=87.0 Temp=32.7°C Hum=31.9%[0m
+[0;32mI (273085) SEN54: Readings: PM1=3.1 PM2.5=3.6 PM4=3.8 PM10=3.9 TVOC=88.0 Temp=32.7°C Hum=31.8%[0m
+[0;32mI (275175) SEN54: Readings: PM1=3.1 PM2.5=3.5 PM4=3.7 PM10=3.8 TVOC=89.0 Temp=32.7°C Hum=31.8%[0m
+[0;32mI (277265) SEN54: Readings: PM1=2.9 PM2.5=3.4 PM4=3.6 PM10=3.7 TVOC=90.0 Temp=32.7°C Hum=31.8%[0m
+[0;32mI (279355) SEN54: Readings: PM1=2.9 PM2.5=3.3 PM4=3.5 PM10=3.7 TVOC=91.0 Temp=32.8°C Hum=31.9%[0m
+[0;32mI (281445) SEN54: Readings: PM1=2.9 PM2.5=3.3 PM4=3.5 PM10=3.6 TVOC=92.0 Temp=32.8°C Hum=31.9%[0m
+[0;32mI (283535) SEN54: Readings: PM1=2.8 PM2.5=3.2 PM4=3.4 PM10=3.5 TVOC=93.0 Temp=32.8°C Hum=31.9%[0m
+[0;32mI (285625) SEN54: Readings: PM1=2.8 PM2.5=3.2 PM4=3.4 PM10=3.5 TVOC=93.0 Temp=32.8°C Hum=31.9%[0m
+[0;32mI (287715) SEN54: Readings: PM1=2.9 PM2.5=3.3 PM4=3.5 PM10=3.6 TVOC=94.0 Temp=32.8°C Hum=31.8%[0m
+[0;32mI (289805) SEN54: Readings: PM1=2.9 PM2.5=3.3 PM4=3.5 PM10=3.6 TVOC=94.0 Temp=32.8°C Hum=31.8%[0m
+[0;32mI (291895) SEN54: Readings: PM1=2.9 PM2.5=3.3 PM4=3.5 PM10=3.6 TVOC=95.0 Temp=32.8°C Hum=31.7%[0m
+[0;32mI (293985) SEN54: Readings: PM1=2.9 PM2.5=3.3 PM4=3.5 PM10=3.6 TVOC=95.0 Temp=32.8°C Hum=31.6%[0m
+[0;32mI (296075) SEN54: Readings: PM1=3.0 PM2.5=3.4 PM4=3.7 PM10=3.8 TVOC=95.0 Temp=32.8°C Hum=31.5%[0m
+[0;32mI (298165) SEN54: Readings: PM1=3.1 PM2.5=3.5 PM4=3.8 PM10=3.9 TVOC=95.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (300255) SEN54: Readings: PM1=3.2 PM2.5=3.6 PM4=3.9 PM10=4.0 TVOC=94.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (302345) SEN54: Readings: PM1=3.2 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=94.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (304435) SEN54: Readings: PM1=3.2 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=94.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (306525) SEN54: Readings: PM1=3.2 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=95.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (308615) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=4.0 PM10=4.1 TVOC=95.0 Temp=32.8°C Hum=31.3%[0m
+[0;32mI (310705) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=95.0 Temp=32.8°C Hum=31.3%[0m
+[0;32mI (312795) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=95.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (314885) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=96.0 Temp=32.8°C Hum=31.4%[0m
+[0;32mI (316975) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=4.0 PM10=4.1 TVOC=96.0 Temp=32.8°C Hum=31.3%[0m
+[0;32mI (319065) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=96.0 Temp=32.8°C Hum=31.3%[0m
+[0;32mI (321155) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (323245) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.0 PM10=4.1 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (325335) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (327425) SEN54: Readings: PM1=3.6 PM2.5=4.0 PM4=4.3 PM10=4.4 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (329515) SEN54: Readings: PM1=3.7 PM2.5=4.1 PM4=4.4 PM10=4.5 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (331605) SEN54: Readings: PM1=3.7 PM2.5=4.1 PM4=4.4 PM10=4.5 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (333695) SEN54: Readings: PM1=3.7 PM2.5=4.1 PM4=4.4 PM10=4.5 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (335785) SEN54: Readings: PM1=3.6 PM2.5=4.0 PM4=4.3 PM10=4.4 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (337875) SEN54: Readings: PM1=3.5 PM2.5=4.0 PM4=4.2 PM10=4.3 TVOC=97.0 Temp=32.7°C Hum=31.1%[0m
+[0;32mI (339965) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=97.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (342055) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.0 PM10=4.1 TVOC=97.0 Temp=32.7°C Hum=31.3%[0m
+[0;32mI (344145) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=97.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (346235) SEN54: Readings: PM1=3.2 PM2.5=3.6 PM4=3.8 PM10=3.9 TVOC=98.0 Temp=32.7°C Hum=31.6%[0m
+[0;32mI (348325) SEN54: Readings: PM1=3.1 PM2.5=3.5 PM4=3.7 PM10=3.8 TVOC=98.0 Temp=32.7°C Hum=31.6%[0m
+[0;32mI (350415) SEN54: Readings: PM1=3.1 PM2.5=3.4 PM4=3.6 PM10=3.7 TVOC=99.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (352505) SEN54: Readings: PM1=3.1 PM2.5=3.4 PM4=3.6 PM10=3.7 TVOC=99.0 Temp=32.7°C Hum=31.4%[0m
+[0;32mI (354595) SEN54: Readings: PM1=3.1 PM2.5=3.5 PM4=3.7 PM10=3.8 TVOC=98.0 Temp=32.7°C Hum=31.3%[0m
+[0;32mI (356685) SEN54: Readings: PM1=3.2 PM2.5=3.6 PM4=3.8 PM10=3.9 TVOC=98.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (358775) SEN54: Readings: PM1=3.2 PM2.5=3.6 PM4=3.8 PM10=3.9 TVOC=98.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (360865) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=4.0 PM10=4.1 TVOC=98.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (362955) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.0 PM10=4.1 TVOC=98.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (365045) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=98.0 Temp=32.7°C Hum=31.3%[0m
+[0;32mI (367135) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=99.0 Temp=32.7°C Hum=31.3%[0m
+[0;32mI (369225) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=99.0 Temp=32.7°C Hum=31.4%[0m
+[0;32mI (371315) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=100.0 Temp=32.7°C Hum=31.4%[0m
+[0;32mI (373405) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=100.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (375495) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=100.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (377585) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=101.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (379675) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=101.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (381765) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=101.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (383855) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=101.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (385945) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=101.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (388035) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=102.0 Temp=32.7°C Hum=31.6%[0m
+[0;32mI (390125) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=102.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (392215) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=102.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (394305) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=102.0 Temp=32.7°C Hum=31.5%[0m
+[0;32mI (396395) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.2 TVOC=102.0 Temp=32.7°C Hum=31.4%[0m
+[0;32mI (398485) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.0 PM10=4.1 TVOC=102.0 Temp=32.7°C Hum=31.4%[0m
+[0;32mI (400575) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=102.0 Temp=32.7°C Hum=31.3%[0m
+[0;32mI (402665) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=102.0 Temp=32.7°C Hum=31.3%[0m
+[0;32mI (404755) SEN54: Readings: PM1=3.3 PM2.5=3.7 PM4=3.9 PM10=4.0 TVOC=102.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (406845) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.0 PM10=4.1 TVOC=101.0 Temp=32.7°C Hum=31.2%[0m
+[0;32mI (408935) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.0 PM10=4.1 TVOC=101.0 Temp=32.7°C Hum=31.1%[0m
+[0;32mI (411025) SEN54: Readings: PM1=3.4 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=101.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (413115) SEN54: Readings: PM1=3.5 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=100.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (415205) SEN54: Readings: PM1=3.5 PM2.5=4.0 PM4=4.2 PM10=4.4 TVOC=100.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (417295) SEN54: Readings: PM1=3.6 PM2.5=4.1 PM4=4.4 PM10=4.5 TVOC=100.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (419385) SEN54: Readings: PM1=3.7 PM2.5=4.2 PM4=4.5 PM10=4.6 TVOC=99.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (421475) SEN54: Readings: PM1=3.7 PM2.5=4.3 PM4=4.5 PM10=4.7 TVOC=99.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (423565) SEN54: Readings: PM1=3.8 PM2.5=4.3 PM4=4.5 PM10=4.7 TVOC=99.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (425655) SEN54: Readings: PM1=3.8 PM2.5=4.3 PM4=4.6 PM10=4.7 TVOC=99.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (427745) SEN54: Readings: PM1=3.9 PM2.5=4.4 PM4=4.7 PM10=4.8 TVOC=99.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (429835) SEN54: Readings: PM1=3.9 PM2.5=4.5 PM4=4.8 PM10=4.9 TVOC=99.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (431925) SEN54: Readings: PM1=3.9 PM2.5=4.4 PM4=4.7 PM10=4.9 TVOC=99.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (434015) SEN54: Readings: PM1=3.8 PM2.5=4.4 PM4=4.7 PM10=4.8 TVOC=99.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (436105) SEN54: Readings: PM1=3.7 PM2.5=4.3 PM4=4.5 PM10=4.7 TVOC=99.0 Temp=32.7°C Hum=31.0%[0m
+[0;32mI (438195) SEN54: Readings: PM1=3.7 PM2.5=4.2 PM4=4.5 PM10=4.6 TVOC=100.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (440285) SEN54: Readings: PM1=3.6 PM2.5=4.1 PM4=4.4 PM10=4.5 TVOC=99.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (442375) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.2 PM10=4.3 TVOC=99.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (444465) SEN54: Readings: PM1=3.4 PM2.5=3.9 PM4=4.1 PM10=4.3 TVOC=99.0 Temp=32.7°C Hum=30.9%[0m
+[0;32mI (446555) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=99.0 Temp=32.7°C Hum=30.8%[0m
+[0;32mI (448645) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=99.0 Temp=32.7°C Hum=30.8%[0m
+[0;32mI (450735) SEN54: Readings: PM1=3.3 PM2.5=3.8 PM4=4.1 PM10=4.2 TVOC=99.0 Temp=32.7°C Hum=30.8%[0m

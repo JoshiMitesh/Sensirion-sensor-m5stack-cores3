@@ -1,0 +1,105 @@
+Command: /home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/mitesh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/mitesh/m5core-s3-hello-world/build/m5core-s3-hello-world.elf /home/mitesh/m5core-s3-hello-world/build/bootloader/bootloader.elf -m '/home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python' '/home/mitesh/esp/esp-idf/tools/idf.py'
+[0;32mI (104) esp_image: segment 2: paddr=000258bc vaddr=40374000 sizee autESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4004883b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x15d0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2f60
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2657-g23c73cdc37 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Mar 26 2025 03:19:31[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (26) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12bf0h ( 76784) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=00022c18 vaddr=3fc95800 size=02c9ch ( 11420) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=000258bc vaddr=40374000 size=0a75ch ( 42844) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=393dch (234460) map[0m
+[0;32mI (156) esp_image: segment 4: paddr=00069404 vaddr=4037e75c size=07028h ( 28712) load[0m
+[0;32mI (163) esp_image: segment 5: paddr=00070434 vaddr=600fe000 size=0001ch (    28) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (182) cpu_start: Multicore app[0m
+[0;32mI (191) cpu_start: Pro cpu start user code[0m
+[0;32mI (191) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (191) app_init: Application information:[0m
+[0;32mI (191) app_init: Project name:     m5core-s3-hello-world[0m
+[0;32mI (196) app_init: App version:      1[0m
+[0;32mI (200) app_init: Compile time:     Mar 26 2025 03:19:17[0m
+[0;32mI (205) app_init: ELF file SHA256:  edcfdf92f...[0m
+[0;32mI (209) app_init: ESP-IDF:          v5.5-dev-2657-g23c73cdc37[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FC99898 len 0004FE78 (319 KiB): RAM[0m
+[0;32mI (238) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (248) heap_init: At 600FE01C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (254) spi_flash: detected chip: generic[0m
+[0;32mI (257) spi_flash: flash io: dio[0m
+[0;33mW (260) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (272) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (282) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (288) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (325) M5GFX: [Autodetect] board_M5StackCoreS3SE[0m
+[0;33mW (465) Power: setExtPower(true) is canceled.[0m
+[0;32mI (1035) SEN54: Initializing I2C[0m
+[0;32mI (1035) SEN54: Sensor found at address 0x69[0m
+[0;32mI (1035) SEN54: Initializing SEN54[0m
+[0;32mI (1035) SEN54: Resetting sensor[0m
+[0;32mI (2035) SEN54: Starting fan cleaning[0m
+[0;32mI (12035) SEN54: Starting measurements[0m
+[0;32mI (14115) SEN54: Readings: PM1=0.0 PM2.5=0.0 PM4=0.0 PM10=0.0[0m
+[0;32mI (16195) SEN54: Readings: PM1=1.3 PM2.5=2.7 PM4=3.8 PM10=4.3[0m
+[0;32mI (18275) SEN54: Readings: PM1=1.3 PM2.5=2.8 PM4=3.9 PM10=4.5[0m
+[0;32mI (20355) SEN54: Readings: PM1=1.4 PM2.5=2.8 PM4=3.8 PM10=4.4[0m
+[0;32mI (22435) SEN54: Readings: PM1=1.5 PM2.5=3.3 PM4=4.6 PM10=5.3[0m
+[0;32mI (24515) SEN54: Readings: PM1=1.7 PM2.5=3.6 PM4=5.2 PM10=5.9[0m
+[0;32mI (26595) SEN54: Readings: PM1=1.8 PM2.5=3.7 PM4=5.2 PM10=6.0[0m
+[0;32mI (28675) SEN54: Readings: PM1=1.8 PM2.5=3.7 PM4=5.1 PM10=5.8[0m
+[0;32mI (30755) SEN54: Readings: PM1=1.9 PM2.5=3.6 PM4=4.9 PM10=5.5[0m
+[0;32mI (32835) SEN54: Readings: PM1=2.0 PM2.5=3.5 PM4=4.6 PM10=5.1[0m
+[0;32mI (34915) SEN54: Readings: PM1=2.1 PM2.5=3.5 PM4=4.6 PM10=5.1[0m
+[0;32mI (36995) SEN54: Readings: PM1=2.2 PM2.5=3.5 PM4=4.5 PM10=4.9[0m
+[0;32mI (39075) SEN54: Readings: PM1=2.2 PM2.5=3.4 PM4=4.4 PM10=4.8[0m
+[0;32mI (41155) SEN54: Readings: PM1=2.3 PM2.5=3.3 PM4=4.1 PM10=4.5[0m
+[0;32mI (43235) SEN54: Readings: PM1=2.3 PM2.5=3.4 PM4=4.1 PM10=4.5[0m
+[0;32mI (45315) SEN54: Readings: PM1=2.4 PM2.5=3.5 PM4=4.3 PM10=4.7[0m
+[0;32mI (47395) SEN54: Readings: PM1=2.5 PM2.5=3.5 PM4=4.3 PM10=4.6[0m
+[0;32mI (49475) SEN54: Readings: PM1=2.6 PM2.5=3.6 PM4=4.4 PM10=4.8[0m
+[0;32mI (51555) SEN54: Readings: PM1=2.6 PM2.5=3.8 PM4=4.6 PM10=5.0[0m
+[0;32mI (53635) SEN54: Readings: PM1=2.7 PM2.5=3.8 PM4=4.5 PM10=4.9[0m
+[0;32mI (55715) SEN54: Readings: PM1=2.8 PM2.5=3.9 PM4=4.7 PM10=5.0[0m
+[0;32mI (57795) SEN54: Readings: PM1=2.9 PM2.5=3.9 PM4=4.7 PM10=5.0[0m
+[0;32mI (59875) SEN54: Readings: PM1=2.9 PM2.5=3.9 PM4=4.6 PM10=5.0[0m
+[0;32mI (61955) SEN54: Readings: PM1=3.0 PM2.5=4.0 PM4=4.8 PM10=5.1[0m
+[0;32mI (64035) SEN54: Readings: PM1=3.1 PM2.5=4.1 PM4=4.8 PM10=5.1[0m
+[0;32mI (66115) SEN54: Readings: PM1=3.2 PM2.5=4.2 PM4=4.9 PM10=5.3[0m
+[0;32mI (68195) SEN54: Readings: PM1=3.3 PM2.5=4.4 PM4=5.1 PM10=5.4[0m
+[0;32mI (70275) SEN54: Readings: PM1=3.3 PM2.5=4.3 PM4=5.1 PM10=5.4[0m
+[0;32mI (72355) SEN54: Readings: PM1=3.3 PM2.5=4.3 PM4=5.0 PM10=5.4[0m
+[0;32mI (74435) SEN54: Readings: PM1=3.3 PM2.5=4.3 PM4=5.0 PM10=5.3[0m
+[0;32mI (76515) SEN54: Readings: PM1=3.3 PM2.5=4.3 PM4=5.0 PM10=5.3[0m
+[0;32mI (78595) SEN54: Readings: PM1=3.3 PM2.5=4.2 PM4=4.9 PM10=5.2[0m
+[0;32mI (80675) SEN54: Readings: PM1=3.2 PM2.5=4.2 PM4=4.9 PM10=5.2[0m
+[0;32mI (82755) SEN54: Readings: PM1=3.2 PM2.5=4.1 PM4=4.8 PM10=5.1[0m
+[0;32mI (84835) SEN54: Readings: PM1=3.1 PM2.5=4.0 PM4=4.6 PM10=4.9[0m
+[0;32mI (86915) SEN54: Readings: PM1=3.0 PM2.5=3.9 PM4=4.4 PM10=4.7[0m
+[0;32mI (88995) SEN54: Readings: PM1=3.0 PM2.5=3.8 PM4=4.4 PM10=4.6[0m
+[0;32mI (91075) SEN54: Readings: PM1=3.0 PM2.5=3.8 PM4=4.4 PM10=4.7[0m

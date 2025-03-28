@@ -1,0 +1,2 @@
+source /home/mitesh/m5core-s3-hello-world/build/bootloader/gdbinit/symbols
+source /home/mitesh/m5core-s3-hello-world/build/bootloader/gdbinit/connect

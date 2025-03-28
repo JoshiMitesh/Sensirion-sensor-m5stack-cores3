@@ -1,0 +1,66 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /home/mitesh/m5core-s3-hello-world/build/bootloader/esp-idf/esptool_py && /home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/mitesh/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/mitesh/m5core-s3-hello-world/build/bootloader/bootloader.bin
+Bootloader binary size 0x52b0 bytes. 0x2d50 bytes (35%) free.
+[2/10] No install step for 'bootloader'
+[3/10] Completed 'bootloader'
+[4/10] Building CXX object esp-idf/main/CMakeFiles/__idf_main.dir/hello_world_main.cpp.obj
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable m5core-s3-hello-world.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.9.dev6
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/mitesh/m5core-s3-hello-world/build/m5core-s3-hello-world.bin
+[9/10] cd /home/mitesh/m5core-s3-hello-world/build/esp-idf/esptool_py && /home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python /home/mitesh/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/mitesh/m5core-s3-hello-world/build/partition_table/partition-table.bin /home/mitesh/m5core-s3-hello-world/build/m5core-s3-hello-world.bin
+m5core-s3-hello-world.bin binary size 0x60480 bytes. Smallest app partition is 0x100000 bytes. 0x9fb80 bytes (62%) free.
+[9/10] cd /home/mitesh/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/mitesh/esp/esp-idf -D "SERIAL_TOOL=/home/mitesh/.espressif/python_env/idf5.5_py3.12_env/bin/python;;/home/mitesh/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/mitesh/m5core-s3-hello-world/build -P /home/mitesh/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 m5core-s3-hello-world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.9.dev6
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE
+Crystal is 40MHz
+USB mode: USB-Serial/JTAG
+MAC: 30:30:f9:00:9d:1c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00070fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21168 bytes to 13483...
+Writing at 0x00000000... (100 %)
+Wrote 21168 bytes (13483 compressed) at 0x00000000 in 0.4 seconds (effective 417.5 kbit/s)...
+Hash of data verified.
+Compressed 394368 bytes to 215965...
+Writing at 0x00010000... (7 %)
+Writing at 0x0001c114... (14 %)
+Writing at 0x000256d6... (21 %)
+Writing at 0x0002b692... (28 %)
+Writing at 0x000317c1... (35 %)
+Writing at 0x00037a64... (42 %)
+Writing at 0x0003dbd3... (50 %)
+Writing at 0x00043d6e... (57 %)
+Writing at 0x0004acd3... (64 %)
+Writing at 0x00050db7... (71 %)
+Writing at 0x00056f84... (78 %)
+Writing at 0x00060ec8... (85 %)
+Writing at 0x000685c5... (92 %)
+Writing at 0x0006ed36... (100 %)
+Wrote 394368 bytes (215965 compressed) at 0x00010000 in 3.3 seconds (effective 954.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 605.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
